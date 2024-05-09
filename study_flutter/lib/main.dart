@@ -7,8 +7,23 @@ import 'package:flutter/material.dart';
 void main() {
 
   // bước 3 : khởi động app
-  runApp( const MaterialApp(
+  runApp(  MaterialApp(
     // Bước :4  sử dụng thành phần để xây dựng giao diện người dùng
-    home: Text("hello word"),
-  ));
+    home: SafeArea(
+
+      child:Scaffold(
+        appBar: AppBar(backgroundColor: Colors.red,
+        title: const Text("Nguyen Tuan Anh"),),
+
+    body:const Center(
+
+      child:Text("hello word"),
+
+    ) 
+    ),  
+    ) ,
+    //xóa nhãn debug
+    debugShowCheckedModeBanner: false,
+ ));
 }
+
