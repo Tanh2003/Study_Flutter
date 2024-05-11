@@ -24,7 +24,7 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
+      'hello gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
       'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
       'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
       'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
@@ -34,20 +34,20 @@ class MyWidget extends StatelessWidget {
       'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  '
       'Chuyên gia cho rằng quyết định mua vàng sẽ tùy thuộc  ',
       textDirection: TextDirection.ltr,
-      textAlign: TextAlign.justify,
-      maxLines: 3,
-      overflow: TextOverflow.ellipsis,
-      textScaleFactor: 1.5,
+      textAlign: TextAlign.justify, // căn giữa test đẹp app
+      maxLines: 3, // tối đa chỉ có 3 dòng
+      overflow: TextOverflow.ellipsis, // chữ dài quá thì nó .....
+
       style: TextStyle(
         color: Colors.blue, // màu chữ
         backgroundColor: Colors.white, // màu backgorunf text
-        fontSize: 25, // kích thước chữ bằng px
-        fontWeight: FontWeight.w500, // tăng độ đậm nhạt
-        fontStyle: FontStyle.italic, // chữ ngiêng
-        fontFamily: "Time New Roman", //  mẫu chữ
-        wordSpacing: 20, // khoảng cách giữ các chữ
-        letterSpacing: 10, // khoảng cách từng ký tự
-        decoration: TextDecoration.lineThrough, // gạch chân ở dưới, trên , giữa
+        fontSize: 15, // kích thước chữ bằng px
+        //fontWeight: FontWeight.w500, // tăng độ đậm nhạt
+        // fontStyle: FontStyle.italic, // chữ ngiêng
+        fontFamily: 'hello', //  mẫu chữ
+        // wordSpacing: 20, // khoảng cách giữ các chữ
+        // letterSpacing: 10, // khoảng cách từng ký tự
+        // decoration: TextDecoration.lineThrough, // gạch chân ở dưới, trên , giữa
       ),
     );
   }
