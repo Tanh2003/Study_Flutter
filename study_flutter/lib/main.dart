@@ -23,18 +23,18 @@ void main() {
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: RichText(
-        text: TextSpan(
-            style: DefaultTextStyle.of(context).style,
-            children: const <TextSpan>[
-              TextSpan(text: 'hello'),
-              TextSpan(
-                  text: 'Bold',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              TextSpan(text: 'world !'),
-            ]),
-      ),
-    );
+    return const Card(
+        color: Colors.blue,
+        margin: EdgeInsets.all(100.0),
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+              vertical: 10.0,
+              horizontal:
+                  100.0), // khoảng cách với nội dung  . all là trên dưới trái phải
+          child: Text(
+            "Tuấn Anh",
+            style: TextStyle(fontSize: 15, color: Colors.white),
+          ),
+        ));
   }
 }
