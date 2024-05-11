@@ -38,6 +38,17 @@ class MyWidget extends StatelessWidget {
       maxLines: 3,
       overflow: TextOverflow.ellipsis,
       textScaleFactor: 1.5,
+      style: TextStyle(
+        color: Colors.blue, // màu chữ
+        backgroundColor: Colors.white, // màu backgorunf text
+        fontSize: 25, // kích thước chữ bằng px
+        fontWeight: FontWeight.w500, // tăng độ đậm nhạt
+        fontStyle: FontStyle.italic, // chữ ngiêng
+        fontFamily: "Time New Roman", //  mẫu chữ
+        wordSpacing: 20, // khoảng cách giữ các chữ
+        letterSpacing: 10, // khoảng cách từng ký tự
+        decoration: TextDecoration.lineThrough, // gạch chân ở dưới, trên , giữa
+      ),
     );
   }
 }
